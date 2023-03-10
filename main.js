@@ -48,19 +48,23 @@ function displayResults(weather) {
     )}°c`;
 
     if (weather.weather[0].main === "Clear") {
-      document.body.style.backgroundImage = 'url("./clear.jpg")';
+      document.body.style.backgroundImage = 'url("./images/clear.jpg")';
     }
     if (weather.weather[0].main === "Clouds") {
-      document.body.style.backgroundImage = 'url("./clouds.jpg")';
+      document.body.style.backgroundImage = 'url("./images/clouds.jpg")';
     }
-    if (weather.weather[0].main === "Rain" ||  weather.weather[0].main ==="Drizzle"|| weather.weather[0].main =="Mist") {
-      document.body.style.backgroundImage = 'url("./rain1.jpg")';
+    if (
+      weather.weather[0].main === "Rain" ||
+      weather.weather[0].main === "Drizzle" ||
+      weather.weather[0].main == "Mist"
+    ) {
+      document.body.style.backgroundImage = 'url("./images/rain1.jpg")';
     }
     if (weather.weather[0].main === "Haze") {
-      document.body.style.backgroundImage = 'url("./haze.jpg")';
+      document.body.style.backgroundImage = 'url("./images/haze.jpg")';
     }
     if (weather.weather[0].main == "Snow") {
-      document.body.style.backgroundImage = 'url("./snow.jpg")';
+      document.body.style.backgroundImage = 'url("./images/snow.jpg")';
     }
   }
 }
